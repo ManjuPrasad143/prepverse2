@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PrepVerse Pro – Placement & Internship Preparation</title>
+  <meta name="description" content="AI mock interviews, aptitude quizzes, coding practice, resume ATS analyzer, study planner and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%236d5efc'/%3E%3Cpath d='M30 72V28h22a15 15 0 010 30H40' fill='none' stroke='white' stroke-width='9' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#/dashboard">
+        <span class="logo">P</span>
+        <span><b>PrepVerse</b><small>Pro</small></span>
+      </a>
+      <nav id="nav"></nav>
+      <div class="side-foot">
+        <div class="xp-mini" id="xpMini"></div>
+      </div>
+    </aside>
+    <div class="main">
+      <header class="topbar">
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+        <button class="search-btn" id="cmdBtn"><span>🔎 Search / jump to…</span><kbd>Ctrl K</kbd></button>
+        <div class="top-right">
+          <span class="pill" id="aiStatus">AI …</span>
+          <span class="pill streak" id="streakPill">🔥 0</span>
+          <button class="icon-btn" id="themeBtn" aria-label="Toggle theme">🌙</button>
+        </div>
+      </header>
+      <main id="view" class="view" tabindex="-1"></main>
+    </div>
+  </div>
+  <div id="toasts" class="toasts"></div>
+  <div id="modalRoot"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/pages-core.js"></script>
+  <script src="js/pages-practice.js"></script>
+  <script src="js/pages-career.js"></script>
+  <script src="js/pages-extra.js"></script>
+  <script src="js/boot.js"></script>
+</body>
+</html>
